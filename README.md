@@ -1,36 +1,25 @@
-## Setup Notes
+# Personal Website/Portfolio
 
-1. All components ready to go (including imports)
-2. Use main.css - less imports
-3. Limit amount of components - better overview
-4. React Icons
+[react icons]: https://react-icons.github.io/react-icons\
+[react simple icons]: https://github.com/icons-pack/react-simple-icons
 
-[react icons] :https://react-icons.github.io/react-icons/
+## To Develop
 
-```javascript
-import { FaHome } from "react-icons/fa"
-const Component = () => {
-  return <FaHome className="icon"></FaHome>
-}
-```
+### GatsbyJS
+`npm install -g gatsby-cli`\
+`gatsby develop`
 
-5. Use constants to avoid repetition.
-6. In order to follow along with the video use my backend (url below)
+### Strapi Server
+* From the `personal-website-api` project run:\
+`yarn && yarn develop`
+* Navigate to:\
+`localhost:1337/admin`
+* Login
 
-   [strapi backend]:https://github.com/john-smilga/strapi-gatsby-porfolio-2020-api
+## How it works
+* Site is statically generated using GatsbyJS
+* Data is managed and fetched from a Headless CMS ([Strapi.io](https://strapi.io/))
 
-7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
-
-```javascript
-{
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        // contentTypes: [`jobs`, `projects`, `blogs`, ],
-        //singleTypes:[`about` ]
-        contentTypes: [`jobs`, `projects`, `blogs`],
-        singleTypes: [`about`],
-      },
-    },
-```
+## Special Thanks
+Special thanks to [John Smilga](https://www.johnsmilga.com/) who provided a tutorial on the initial implementation of this project in Gatsby and Strapi.\
+[Gatsby - Strapi Portfolio Project](https://www.youtube.com/watch?v=asB-dUwpH4Y)

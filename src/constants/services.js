@@ -1,22 +1,23 @@
-import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import React from "react";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { Kubernetes } from '@icons-pack/react-simple-icons';
 export default [
   {
     id: 1,
-    icon: <FaCode className="service-icon" />,
-    title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaReact className="service-icon" />,
+    title: "Front-End",
+    text: `Insert language skills here`,
   },
   {
     id: 2,
-    icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaNodeJs className="service-icon" />,
+    title: "Back-End",
+    text: `Insert language skills here`,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <Kubernetes className="service-icon" />,
+    title: "Infrastructure",
+    text: `Insert language skills here`,
   },
 ]
