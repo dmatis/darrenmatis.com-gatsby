@@ -16,6 +16,11 @@
 `localhost:1337/admin`
 * Login
 
+## To Deploy
+* Make sure Strapi Server is running with `yarn develop`
+* In the project repo run: `gatsby clean && gatsby build`
+* Drag and drop the `public` folder to Netlify
+
 ## How it works
 * Site is statically generated using GatsbyJS
 * Data is managed and fetched from a Headless CMS ([Strapi.io](https://strapi.io/))

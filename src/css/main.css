@@ -2,8 +2,8 @@
 =============== 
 Fonts
 ===============
+Added by gatsby-plugin-google-fonts
 */
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
 
 /*
 =============== 
@@ -970,6 +970,7 @@ Contact Page
   padding: 1rem 1.5rem;
 }
 .form-control {
+  resize: none;
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
