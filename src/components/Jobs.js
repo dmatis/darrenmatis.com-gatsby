@@ -37,7 +37,6 @@ const Jobs = () => {
       <div className="jobs-center">
         <div className="btn-container">
           {jobs.map((job, index) => {
-            {/* job toggle buttons */}
             return (
               <button
                 key={job.strapiId}

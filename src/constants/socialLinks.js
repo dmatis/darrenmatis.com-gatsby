@@ -4,7 +4,7 @@ import {
   FaLinkedin,
   FaGithubSquare,
   FaInstagramSquare,
-  FaWeixin,
+  FaTwitter,
 } from "react-icons/fa"
 
 const data = [
@@ -30,8 +30,8 @@ const data = [
   },
   {
     id: 5,
-    icon: <FaWeixin className="social-icon"></FaWeixin>,
-    url: "https://www.twitter.com",
+    icon: <FaTwitter className="social-icon"></FaTwitter>,
+    url: "https://twitter.com/MatisMei",
   },
 ]
 const links = data.map(link => {
