@@ -12,27 +12,35 @@ Variables
 */
 
 :root {
+  /* Colour palette */
+  --clr-shell: #CBA688;
+  --clr-sunset: #935430;
+  --clr-mist: #90A3A7;
+  --clr-fog: #EFEFEF;
+  --clr-tide: #395159;
+  --clr-midnight: #23303D;
+
   /* dark shades of primary color*/
   /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: hsl(184, 91%, 17%);
+  --clr-primary-1: var(--clr-fog);
   --clr-primary-2: hsl(185, 84%, 25%);
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
-  --clr-primary-5: #2caeba;
+  --clr-primary-5: var(--clr-fog);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
-  --clr-primary-8: hsl(184, 80%, 74%);
-  --clr-primary-9: hsl(185, 94%, 87%);
-  --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-8: #23303D;
+  --clr-primary-9: #23303D;
+  --clr-primary-10: #90A3A7;
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-1: #23303D;
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-5: var(--clr-fog);
   --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-9: #23303D;
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-red-dark: hsl(360, 67%, 44%);
@@ -63,7 +71,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: var(--clr-mist);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -169,12 +177,12 @@ p {
     width: 95vw;
   }
 }
-/* added during recording */
+
 .underline {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-8);
   margin-left: auto;
   margin-right: auto;
 }
@@ -196,11 +204,11 @@ p {
 }
 .social-link {
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-primary-5);
   transition: var(--transition);
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-grey-1);
 }
 /*
 =============== 
@@ -217,7 +225,7 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-white);
+  background: var(--clr-primary-9);
 }
 .nav-center {
   width: 90vw;
@@ -259,7 +267,7 @@ Navbar
   }
   .nav-links a {
     text-transform: capitalize;
-    color: var(--clr-grey-1);
+    color: var(--clr-primary-1);
     font-weight: bold;
     letter-spacing: var(--spacing);
     transition: var(--transition);
@@ -311,7 +319,7 @@ Sidebar
   display: block;
   text-align: center;
   text-transform: capitalize;
-  color: var(--clr-grey-5);
+  color: var(--clr-midnight);
   letter-spacing: var(--spacing);
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -322,6 +330,14 @@ Sidebar
   background: var(--clr-primary-9);
   color: var(--clr-primary-5);
 }
+.sidebar .social-links li a {
+  color: var(--clr-mist);
+}
+
+.sidebar .social-links li a:hover {
+  color: var(--clr-midnight);
+}
+
 .close-btn {
   position: absolute;
   right: 4.75%;
@@ -329,7 +345,7 @@ Sidebar
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: var(--clr-midnight);
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
@@ -448,7 +464,7 @@ Hero
     left: 65%;
     right: 0;
     bottom: 0;
-    background: var(--clr-white);
+    background: var(--clr-tide);
   }
   .hero-center {
     grid-template-columns: repeat(12, 1fr);
@@ -587,6 +603,7 @@ Jobs
 }
 .job-date {
   letter-spacing: var(--spacing);
+  color: var(--clr-midnight);
 }
 .job-desc {
   display: grid;
@@ -597,10 +614,10 @@ Jobs
 }
 .job-desc p {
   margin-bottom: 0;
-  color: var(--clr-grey-3);
+  color: var(--clr-midnight);
 }
 .job-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-grey-9);
 }
 @media screen and (min-width: 992px) {
   .jobs-center {
@@ -665,7 +682,7 @@ Projects
 .project-number {
   display: inline-block;
   font-size: 1.25rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-mist);
   margin-bottom: 0.75rem;
 }
 .project-info h3 {
@@ -696,13 +713,13 @@ Projects
   margin-top: 0.5rem;
 }
 .project-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-mist);
   font-size: 1.25rem;
   margin-right: 0.5rem;
   transition: var(--transition);
 }
 .project-icon:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-8);
 }
 @media screen and (min-width: 576px) {
   .project-img {
@@ -828,7 +845,7 @@ Footer
 */
 .footer {
   height: 9rem;
-  background: #222;
+  background: var(--clr-primary-9);
   text-align: center;
   display: grid;
   place-items: center;
@@ -849,7 +866,7 @@ Footer
   color: var(--clr-white);
 }
 .footer .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-mist);
 }
 /*
 ===============
@@ -964,7 +981,7 @@ Contact Page
 }
 .contact-form h3 {
   padding-top: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-8);
 }
 .form-group {
   padding: 1rem 1.5rem;
@@ -995,6 +1012,8 @@ Contact Page
   border-bottom-right-radius: var(--radius);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  background: var(--clr-primary-8);
+  color: var(--clr-white);
 }
 /*
 ===============
