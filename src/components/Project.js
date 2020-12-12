@@ -17,10 +17,10 @@ const Project = ({ description, title, github, stack, url, image, index}) => {
           {stack.map((item) => <span key={item.id}>{item.title}</span>)}
         </div>
         <div className="project-links">
-          <a href={github}>
+          <a aria-label="Navigate to Github repository" href={github}>
             <FaGithubSquare className="project-icon" />
           </a>
-          <a href={url}>
+          <a aria-label="Navigate to project webpage" href={url}>
             <FaShareSquare className="project-icon" />
           </a>
         </div>

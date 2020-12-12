@@ -31,6 +31,12 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDescription} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
+
+      {/* LinkedIn cards */}
+      <meta property='og:title' content={siteTitle} />
+      <meta property='og:image' content={`${siteUrl}${image}`} />
+      <meta property='og:description' content={siteDescription} />
+      <meta property='og:url' content='https://www.darrenmatis.com' />
     </Helmet>
   );
 }

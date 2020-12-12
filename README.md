@@ -3,7 +3,8 @@
 
 [![Portfolio Screenshot](./static/twitter-img.png)](https://www.darrenmatis.com)
 
-
+## Lighthouse Score
+![Lighthouse Score](./static/lighthouse-score.png)
 
 ## To Develop
 

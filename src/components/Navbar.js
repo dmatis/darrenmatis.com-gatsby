@@ -7,7 +7,7 @@ const Navbar = ({ toggleSidebar }) => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <button onClick={toggleSidebar} type="button" className="toggle-btn">
+          <button aria-label="Open Sidebar" onClick={toggleSidebar} type="button" className="toggle-btn">
             <FaAlignRight />
           </button>
         </div>
