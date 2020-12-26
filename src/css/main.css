@@ -1004,6 +1004,7 @@ Contact Page
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
+
 .submit-btn {
   display: block;
   width: 100%;
